@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriPlan - Your Personal Diet Plan</title>
+    <link rel="stylesheet" href="nutriplan.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="logo">🥗</span>
+                <span class="brand-name">NutriPlan</span>
+            </div>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link active">
+                    <span class="icon">🏠</span>
+                    Home
+                </a>
+                <a href="features.html" class="nav-link">
+                    <span class="icon">👑</span>
+                    Features</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Your Personalized Nutrition Plan</h1>
+            <p>Customized meal plans and calorie tracking to help you reach your goals</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Daily Overview Section -->
+            <section class="overview-section">
+                <div class="card">
+                    <h2>Daily Overview</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card green">
+                            <span class="stat-label">Target Calories</span>
+                            <span class="stat-value">2,000</span>
+                        </div>
+                        <div class="stat-card blue">
+                            <span class="stat-label">Protein Goal</span>
+                            <span class="stat-value">150g</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Macro Distribution Chart -->
+                <div class="card">
+                    <h2>Daily Macro Distribution</h2>
+                    <div class="macro-charts">
+                        <div class="macro-item">
+                            <div class="macro-header">
+                                <span>Proteins</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress blue" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="macro-item">
+                            <div class="macro-header">
+                                <span>Carbs</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress green" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div class="macro-item">
+                            <div class="macro-header">
+                                <span>Fats</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress yellow" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Meal Plan Section -->
+            <section class="meal-plan-section">
+                <div class="card">
+                    <h2>Daily Meal Plan</h2>
+                    <div class="meals">
+                        <div class="meal-item">
+                            <div class="meal-header">
+                                <span class="meal-icon">☕</span>
+                                <h3>Breakfast (8:00 AM)</h3>
+                            </div>
+                            <ul class="meal-list">
+                                <li>Oatmeal with berries</li>
+                                <li>Greek yogurt</li>
+                                <li>Almonds</li>
+                            </ul>
+                            <div class="meal-calories">
+                                <span class="icon">⏰</span>
+                                400 calories
+                            </div>
+                        </div>
+                        <div class="meal-item">
+                            <div class="meal-header">
+                                <span class="meal-icon">🌞</span>
+                                <h3>Lunch (1:00 PM)</h3>
+                            </div>
+                            <ul class="meal-list">
+                                <li>Grilled chicken breast</li>
+                                <li>Quinoa</li>
+                                <li>Steamed vegetables</li>
+                            </ul>
+                            <div class="meal-calories">
+                                <span class="icon">⏰</span>
+                                550 calories
+                            </div>
+                        </div>
+                        <div class="meal-item">
+                            <div class="meal-header">
+                                <span class="meal-icon">🌙</span>
+                                <h3>Dinner (7:00 PM)</h3>
+                            </div>
+                            <ul class="meal-list">
+                                <li>Baked salmon</li>
+                                <li>Brown rice</li>
+                                <li>Roasted broccoli</li>
+                            </ul>
+                            <div class="meal-calories">
+                                <span class="icon">⏰</span>
+                                500 calories
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Nutrition Tips -->
+        <section class="tips-section card">
+            <h2>Nutrition Tips</h2>
+            <ul class="tips-list">
+                <li>Stay hydrated by drinking at least 8 glasses of water daily</li>
+                <li>Eat slowly and mindfully to better recognize fullness signals</li>
+                <li>Include a variety of colorful vegetables in your meals</li>
+                <li>Plan your meals in advance to avoid unhealthy food choices</li>
+            </ul>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fitness Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

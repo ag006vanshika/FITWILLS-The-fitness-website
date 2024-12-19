@@ -1,0 +1,250 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #f9fafb, #f3f4f6);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* navigation */
+.navbar{
+    display: flex;
+    justify-content: end;
+    margin-right: 80px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+       
+.nav-link {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #90e1ad;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #06414a;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #c2ece6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #dbeafe;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #1e40af;
+}
+
+.feature-card p {
+    color: #6b7280;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 80px 0;
+    background-color: #f1c2c9;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #06414a;
+}
+
+.section-desc {
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background: #f9e9e1;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card.popular {
+    background-color: #abe6dd;
+    color: white;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #f97316, #ec4899);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.price {
+    margin: 1.5rem 0;
+}
+
+.amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.period {
+    color: #6b7280;
+}
+
+.popular .period {
+    color: #06414a;
+}
+
+.features-list {
+    list-style: none;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.features-list li {
+    margin-bottom: 0.75rem;
+    color: #6b7280;
+}
+
+.popular .features-list li {
+    color: #022226;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #06414a;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #eb8595;
+}
+
+.btn-white {
+    background-color: white;
+    color: #06414a;
+}
+
+.btn-white:hover {
+    background-color: #eb8595;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #06414a;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    color: #abe6dd;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+ /* Footer */
+ footer {
+    background-color: #06414a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+}
+

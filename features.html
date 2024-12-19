@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://img.freepik.com/premium-photo/dumbbell-barbell-workout-gym-copy-space-text-decoration_1028938-40984.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+backdrop-filter: blur(4px);  
+}
+       
+       /* navigation bar */
+        nav {
+    background-color: #06414a;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* position: sticky;
+            top: 0; */
+        }
+
+        .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+       
+.nav-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #90e1ad;
+}
+
+/* header */
+        header {
+            color: #fff;
+            padding: 5rem;
+            padding-top: 9%;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-top:0px;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        header p{
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* features card */
+         .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem 1rem;
+            padding-bottom: 200px;
+        }
+
+        .card {
+            background: white;
+            margin: 1rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            max-width: 380px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            max-width: 320px;
+            height: 300px;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+        .card h3 {
+            margin-bottom: 1rem;
+            color: #16a085;
+        }
+        .card p {
+            color: #7f8c8d;
+        }
+
+        a{
+            text-decoration: none;
+            color: #20626c;
+        }
+
+        /* footer */
+        footer {
+            background: #06414a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+       
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 calc(45% - 2rem);
+                max-width: calc(45% - 2rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                flex: 1 1 calc(100% - 2rem);
+                max-width: calc(100% - 2rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container"> 
+            <div class="nav-links">
+                <a href="home.html" class="nav-link active">
+                    <span class="icon">🏠</span>
+                    Home
+                </a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>FitWills</h1>
+        <p>Experience the difference. Choose amongst our features today.</p>
+    </header>
+
+
+<div class="container">
+       <div class="card" id="membership" style="align-content:start ;">
+            <img src="https://media.istockphoto.com/id/1092303554/photo/girls-giving-high-five-close-up-focus-on-hands.jpg?s=612x612&w=0&k=20&c=iva0qPj5mjqFxUftC8fC8iNj2Q0kgZRYZ2FjXnWJiyE=" alt="Membership">
+            <h3><a href="membership.html">Membership</a></h3>
+            <p>Join our community and unlock exclusive benefits and workouts.</p>
+        </div>
+        <div class="card" id="personal-workout" >
+            <img src="https://satviklivinglife.wordpress.com/wp-content/uploads/2022/09/da6d0-photo-1544367567-0f2fcb009e0b.jpg" alt="Personal Workout">
+           <h3><a href="FitTrack.html">FitTrack</a></h3>
+            <p>Track your consistency and get a personalized workout plan tailored to your goals and fitness level.</p>
+        </div>
+        <div class="card" id="fitness-tracking">
+            <img src="https://www.londonesthetic.com/wp-content/uploads/2018/03/slider-2-1.jpg" alt="Fitness Tracking">
+            <h3><a href="nutriplan.html">NutriPlan</a></h3>
+            <p>Unlock your potential, one calorie at a time.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 FitLife. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
